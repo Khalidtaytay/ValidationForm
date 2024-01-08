@@ -1,0 +1,77 @@
+body{
+    background: #183057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background: rgba(255, 255, 255, 0.954);
+    position: relative;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    padding: 20px;
+}
+.infos{
+    position: relative;
+    top: 10%;
+}
+#div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 60%;
+    position: absolute;
+    margin: 10px 5px;
+    height: 30px;
+    border-bottom: 2px solid gray;
+    left: 130px;
+}
+button{
+    background: rgb(4, 4, 75);
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 38%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+}
+.sentIcon{
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 42%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.936);
+
+}
+i{
+    font-size: 35px;
+
+}
+
+span{
+    width: 150px;
+    color: red;
+    position: relative;
+    text-align: start;
+    bottom: -15px;
+    left: 30px;
+    top: 50px;
+    font-size: 10px;
+}
