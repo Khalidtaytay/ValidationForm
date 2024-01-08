@@ -4,7 +4,8 @@ let ErrorName = document.getElementById('ErrorName');
 let ErrorPhone = document.getElementById('ErrorPhone');
 let ErrorEmail = document.getElementById('ErrorEmail');
 let ErrorSubmit = document.getElementById('ErrorSubmit');
-let err =['plese entre your name','plase entre your number','please entre your email','please write your message']
+let Form = document.querySelector('.form');
+let notification = document.querySelector('.notification');
 
 function fxName(){
     let  name = document.getElementById('name').value;
@@ -53,12 +54,14 @@ function fxSubmit(){
     if(!fxName() || !fxPhone() || !fxEmail()){
         ErrorSubmit.innerHTML = 'Please fix the error to submit'
         return false;
-    }
+    };
     ShowNotification()
     return true;
     
 };
 function ShowNotification(){
-    alert ('dine')
+    Form.style.display = 'none'
+    notification.classList.add('notificationActive')
+
 };
 
