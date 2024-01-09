@@ -6,6 +6,8 @@ let ErrorEmail = document.getElementById('ErrorEmail');
 let ErrorSubmit = document.getElementById('ErrorSubmit');
 let Form = document.querySelector('.form');
 let notification = document.querySelector('.notification');
+let urform = document.querySelector('.urform');
+let k = document.getElementById('k');
 
 function fxName(){
     let  name = document.getElementById('name').value;
@@ -13,7 +15,7 @@ function fxName(){
         ErrorName.innerHTML = 'Completing this section is obligatory.';
         return false;
     }
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    if(!name.match(/^[A-Za-z]+(\s[A-Za-z]+)+$/)){
         ErrorName.innerHTML = 'Write full name !';
         return false;
     }
@@ -56,12 +58,60 @@ function fxSubmit(){
         return false;
     };
     ShowNotification()
+    fxurname()
+    fxurphone()
+    fxurEmail()
+    fxurMessage()
     return true;
-    
+   
 };
 function ShowNotification(){
     Form.style.display = 'none'
     notification.classList.add('notificationActive')
 
 };
+
+// your form
+let urName = document.getElementById('urName');
+let urPhone = document.getElementById('urPhone');
+let urEmail = document.getElementById('urEmail');
+let urMessage = document.getElementById('urMessage');
+
+function fxurname(){
+    let  nom = document.getElementById('name').value;
+    let NM = document.createElement('div')
+    NM.classList.add('allurinfos')
+    NM.innerHTML = nom
+    urName.appendChild(NM)
+    k.innerHTML = nom
+
+};
+function fxurphone(){
+    let  num = document.getElementById('number').value;
+    let NMR = document.createElement('div')
+    NMR.classList.add('allurinfos')
+    NMR.innerHTML = num
+    urPhone.appendChild(NMR)
+};
+function fxurEmail(){
+    let eml = document.getElementById('email').value;
+    let EML = document.createElement('div')
+    EML.classList.add('allurinfos')
+    EML.innerHTML = eml
+    urEmail.appendChild(EML)
+};
+function fxurMessage(){
+    let  msg = document.getElementById('Message').value;
+    let MSG = document.createElement('div')
+    MSG.innerHTML = msg
+    urMessage.appendChild(MSG)
+};
+
+//showin fom function :
+
+function showform(){
+    notification.style.display = 'none';
+    urform.style.display = 'inline-block';
+
+}
 

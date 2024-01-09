@@ -6,8 +6,8 @@ body{
 }
 .form{
     background: rgba(255, 255, 255, 0.954);
-    position: relative;
     flex-direction: column;
+    border-radius: 5px;
     height: 400px;
     width: 400px;
     position: absolute;
@@ -111,4 +111,57 @@ span{
 }
 #checkIcon{
     color: rgb(72, 151, 80);
+}
+
+#ErrorSubmit{
+    position: absolute;
+    top: 95%;
+    left: 10px;
+}
+
+/* the link for your form*/
+
+here{
+    color: rgba(24, 24, 252, 0.852);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*your form*/
+
+.urform{
+    background: rgba(255, 255, 255, 0.954);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 10%;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+.yourform{
+    margin: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 10%;
+}
+.frm{
+    margin: 40px 20px;
+}
+
+
+.yourform div {
+    display: flex;
+}
+.allurinfos{
+    position: absolute;
+    left: 200px;
+
+}
+
+#urMessage{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
 }

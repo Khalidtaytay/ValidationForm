@@ -19,7 +19,7 @@
             </div>
             <div id="div">
                 <p>Phone Number</p>
-                <input type="text" id="number" placeholder="EX : 06 88 88 88 88" onkeyup="fxPhone()">
+                <input type="text" id="number"  placeholder="EX : 06 88 88 88 88" onkeyup="fxPhone()">
                 <span id="ErrorPhone"></span>
             </div>
             <div id="div">
@@ -29,7 +29,7 @@
             </div>
             <div id="div">
                 <p>Your message</p>
-                <input type="text" placeholder="Write your message">
+                <input type="text" id="Message" placeholder="Write your message">
                 <span id="ErrorMessage"></span>
             </div>            
         </div>
@@ -48,9 +48,22 @@
   
         <h1>Submitted syccessfully !</h1>
         <div class="notif">
-            <p>We just received your message. Thank you very much for writing to us. We are working on your request and will get in touch as soon as possible.</p>
-            <p>if you like to see your form, <a href="">please click here</a></p>
+            <p>We just received your form. Thank you very much for writing to us. We are working on your request and will get in touch as soon as possible.</p>
+            <p>If you like to see your form, <here onclick="showform()">please click here</here>.</p>
         </div>
+    </div>
+
+
+    <div class="urform">
+        <P>Hello <k id="k"></k>, this represents your actual form :</P>
+        <div class="yourform">
+            <div id="urName" class="frm" onchange="fxurname()">Full name :</div>
+            <div id="urPhone" class="frm" onchange="fxurphone()">Phone nmber :</div>
+            <div id="urEmail" class="frm" onchange="fxurEmail()">Email :</div>
+        </div>
+        <div id="urMessage" class="frm" onchange="fxurMessage()"></div>
+    
+
     </div>
 
 </body>
